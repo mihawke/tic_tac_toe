@@ -1,0 +1,103 @@
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    background-color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.logs{
+    color: white;
+}
+
+.choice-x {
+    color: #218838;
+    font-size: 32px;
+}
+
+.choice-o {
+    color: #fd7e14;
+    font-size: 32px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.btn-container button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Reset button style */
+.reset {
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    color: #333;
+}
+
+.reset:hover {
+    background-color: #e0e0e0;
+}
+
+/* Submit button style */
+.player1 {
+    background-color: #28a745;
+    /* Green color */
+    border: 1px solid #218838;
+    /* Darker green border */
+    color: #fff;
+    /* White text */
+}
+
+.player1:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+/* Cancel button style */
+.player2 {
+    background-color: #fd7e14;
+    /* Orange color */
+    border: 1px solid #e36c0a;
+    /* Darker orange border */
+    color: #fff;
+    /* White text */
+}
+
+.player2:hover {
+    background-color: #e36c0a;
+    /* Darker orange on hover */
+}
+
+.start {
+    background-color: #007bff;
+    border: 1px solid blue;
+    color: #fff;
+}
+
+.start:hover {
+    background-color: #0056b3;
+}
